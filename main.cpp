@@ -175,10 +175,10 @@ if(levelCheck==levelUp&&difficulty>5)
     levels+=1;
     difficulty-=5;
     counter2=0;
-}
-if(levelCheck==levelUp&&levels>7)
-{
-    levelUp+=20;
+    if (levels==8)
+    {
+        levelUp+=100;
+    }
 }
 
 if(levelCheck==levelUp&&difficulty<=5&&difficulty>2)
@@ -189,6 +189,8 @@ if(levelCheck==levelUp&&difficulty<=5&&difficulty>2)
     difficulty-=1;
     counter2=0;
 }
+
+
         if(gameOver)
         {
             gameStart++;
